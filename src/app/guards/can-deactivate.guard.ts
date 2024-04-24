@@ -7,4 +7,8 @@ export type CanComponentDeactivate = {
 
 export const canDeactivateGuard: CanDeactivateFn<CanComponentDeactivate> = (
   component: CanComponentDeactivate
-) => (component.canDeactivate ? component.canDeactivate() : true);
+) => {
+
+  console.log(component);
+  return (component.canDeactivate ? component.canDeactivate() : true);
+};
