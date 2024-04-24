@@ -10,5 +10,5 @@ export const AppRoutes: Routes = [
       },
     ],
   },
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: '/settings' },
 ];
