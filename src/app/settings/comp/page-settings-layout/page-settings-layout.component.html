@@ -4,5 +4,7 @@
     <a routerLink="second">Second</a>
   </ul>
 
-  <router-outlet />
+  @if (isLoaded()) {
+    <router-outlet />
+  }
 </div>
